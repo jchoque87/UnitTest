@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <form>
+            <div class="form-group">
+              <label for="degree">Degree:</label>
+              <input type="number" class="form-control" id="degree" value="0">
+              <select class="form-control" id="type">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                  <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="to">To:</label>
+              <select class="form-control" id="convert">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="value">Value:</label>
+                <input type="text" class="form-control" id="value" readonly>
+            </div>
+            <button type="button" class="btn btn-primary" id="btn">Convert</button>
+          </form>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
