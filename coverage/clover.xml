@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625539179344" clover="3.2.0">
-  <project timestamp="1625539179344" name="All files">
-    <metrics statements="40" coveredstatements="25" conditionals="18" coveredconditionals="10" methods="9" coveredmethods="6" elements="67" coveredelements="41" complexity="0" loc="40" ncloc="40" packages="1" files="1" classes="1"/>
+<coverage generated="1625541845124" clover="3.2.0">
+  <project timestamp="1625541845124" name="All files">
+    <metrics statements="43" coveredstatements="34" conditionals="18" coveredconditionals="11" methods="10" coveredmethods="9" elements="71" coveredelements="54" complexity="0" loc="43" ncloc="43" packages="1" files="1" classes="1"/>
     <file name="DegreeCalculator.js" path="C:\Users\javie\Desktop\UnitTest\src\js\DegreeCalculator.js">
-      <metrics statements="40" coveredstatements="25" conditionals="18" coveredconditionals="10" methods="9" coveredmethods="6"/>
-      <line num="4" count="5" type="stmt"/>
-      <line num="5" count="5" type="stmt"/>
-      <line num="6" count="5" type="stmt"/>
-      <line num="7" count="5" type="stmt"/>
-      <line num="8" count="5" type="stmt"/>
-      <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+      <metrics statements="43" coveredstatements="34" conditionals="18" coveredconditionals="11" methods="10" coveredmethods="9"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
+      <line num="6" count="9" type="stmt"/>
+      <line num="7" count="9" type="stmt"/>
+      <line num="8" count="9" type="stmt"/>
+      <line num="12" count="9" type="cond" truecount="2" falsecount="0"/>
       <line num="13" count="3" type="cond" truecount="3" falsecount="1"/>
       <line num="15" count="0" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
-      <line num="22" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="1" type="cond" truecount="1" falsecount="3"/>
+      <line num="22" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="5" type="cond" truecount="2" falsecount="2"/>
       <line num="25" count="1" type="stmt"/>
       <line num="26" count="0" type="stmt"/>
       <line num="27" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="30" count="0" type="stmt"/>
+      <line num="29" count="4" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
       <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="33" count="1" type="cond" truecount="1" falsecount="3"/>
       <line num="35" count="1" type="stmt"/>
@@ -39,11 +39,14 @@
       <line num="62" count="3" type="stmt"/>
       <line num="67" count="2" type="stmt"/>
       <line num="68" count="2" type="stmt"/>
-      <line num="73" count="0" type="stmt"/>
-      <line num="74" count="0" type="stmt"/>
-      <line num="79" count="0" type="stmt"/>
-      <line num="80" count="0" type="stmt"/>
+      <line num="73" count="1" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
+      <line num="80" count="1" type="stmt"/>
       <line num="85" count="0" type="stmt"/>
+      <line num="90" count="2" type="stmt"/>
+      <line num="91" count="2" type="stmt"/>
+      <line num="92" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -33,3 +33,52 @@ test("Given a number 100 in celsius degree the getCelsiusToKelvin function it sh
     expect(degreeCalculatorObj.getCelsiusToKelvin()).toBe(373.15);
 }); 
 
+test("Given a number 212 in fahrenheit degree the getFahrenheitToKelvin function it should be return a number 373.15 in kelvin value degree", ()=>{
+    const degreeCalculatorObj = new DegreeCalculator(212, 'fahrenheit', 'kevin');
+    expect(degreeCalculatorObj.getFahrenheitToKelvin()).toBe(373.15);
+}); 
+
+test("Given a number 375.15 in kelvin degree the getKelvinToFahrenheit function it should be return a number 212 in fahrenheit value degree", ()=>{
+    const degreeCalculatorObj = new DegreeCalculator(373.15, 'fahrenheit', 'kevin');
+    expect(degreeCalculatorObj.getKelvinToFahrenheit()).toBe(212);
+}); 
+
+test("Give a Mock for moveTo function it should called", ()=>{
+    const cvs = {
+        width: 640,
+        height: 480,
+        getContext: jest.fn()
+    }
+    const ctx = {
+        moveTo : jest.fn(),
+        lineTo : jest.fn(),
+        stroke : jest.fn()
+    }
+
+    const degreeCalculatorObj = new DegreeCalculator(373.15, 'fahrenheit', 'kevin');
+    degreeCalculatorObj.drawGraphics(ctx);
+    expect(ctx.moveTo).toHaveBeenCalledWith(0, 0);
+}); 
+
+test("Give a Mock for stroke function it should called", ()=>{
+    const cvs = {
+        width: 640,
+        height: 480,
+        getContext: jest.fn()
+    }
+    const ctx = {
+        moveTo : jest.fn(),
+        lineTo : jest.fn(),
+        stroke : jest.fn()
+    }
+
+    const degreeCalculatorObj = new DegreeCalculator(373.15, 'fahrenheit', 'kevin');
+    degreeCalculatorObj.drawGraphics(ctx);
+    expect(ctx.stroke).toHaveBeenCalled();
+}); 
+
+
+
+
+
+
