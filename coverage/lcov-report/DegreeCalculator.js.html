@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.94% </span>
+                <span class="strong">59.18% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/49</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">44.44% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>8/18</span>
+                <span class='fraction'>29/49</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">55.56% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>5/9</span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>10/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.5% </span>
+                <span class="strong">66.67% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>6/9</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/40</span>
+                <span class='fraction'>25/40</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -147,20 +147,20 @@
 <a name='L88'></a><a href='#L88'>88</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -192,8 +192,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,8 +204,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -246,8 +246,8 @@
             switch(this.convertType)
             {
 <span class="branch-0 cbranch-no" title="branch not covered" >                case 'celsius':     <span class="cstat-no" title="statement not covered" >this.answer = this.currentValue; </span>  <span class="cstat-no" title="statement not covered" >break;</span></span>
-<span class="branch-1 cbranch-no" title="branch not covered" >                case 'fahrenheit':  <span class="cstat-no" title="statement not covered" >this.answer = this.getCelsiusToFahrenheit(); <span class="cstat-no" title="statement not covered" ></span>break;</span></span>
-<span class="branch-2 cbranch-no" title="branch not covered" >                case 'kelvin':      <span class="cstat-no" title="statement not covered" >this.answer = this.getCelsiusToKelvin(); </span>    <span class="cstat-no" title="statement not covered" >break;</span></span>
+                case 'fahrenheit':  this.answer = this.getCelsiusToFahrenheit(); break;
+                case 'kelvin':      this.answer = this.getCelsiusToKelvin();     break;
                 default: 
                     this.answer = "undefined Convert Type";
                 break;
@@ -277,10 +277,10 @@
         }
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    ge</span>tCelsiusToFahrenheit()
+    getCelsiusToFahrenheit()
     {
-        let answer = <span class="cstat-no" title="statement not covered" >(parseFloat(this.currentValue)*1.8) + 32;</span>
-<span class="cstat-no" title="statement not covered" >        return answer;</span>
+        let answer = (parseFloat(this.currentValue)*1.8) + 32;
+        return answer;
     }
 &nbsp;
     getFahrenheitToCelsius()
@@ -325,7 +325,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Jul 04 2021 15:55:22 GMT-0400 (Bolivia Time)
+                at Mon Jul 05 2021 22:39:39 GMT-0400 (Bolivia Time)
             </div>
         </div>
         <script src="prettify.js"></script>
